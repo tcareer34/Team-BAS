@@ -1,5 +1,7 @@
 # Team BAS
-# Final Project
+# CNE 340 Final Project
+# Public Institution Graduation Rate in the State of Texas
+
 
 # Import section
 import pandas as pd
