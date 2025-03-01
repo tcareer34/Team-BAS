@@ -32,6 +32,7 @@ This project:
 ![Bottom 3 Institutions](figure_2.png)
 
 ![figure #3.jpg](figure%20%233.jpg)
+
 ## Usage
 
 To use this repository:
