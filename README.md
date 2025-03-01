@@ -25,7 +25,8 @@ This project:
 
 **Top Public Institutions by Graduation Rate (2020-2022)**
 
-![Top Institutions](figure_1.jpg)
+![Figure 1](figure_1.jpg)
+
 
 **Bottom 3 Public Institutions by Graduation Rate (2020-2022)**
 
