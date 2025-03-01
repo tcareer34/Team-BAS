@@ -25,11 +25,11 @@ This project:
 
 **Top Public Institutions by Graduation Rate (2020-2022)**
 
-![Top Institutions](top_institutions.jpg)
+![Top Institutions](figure_1.png)
 
 **Bottom 3 Public Institutions by Graduation Rate (2020-2022)**
 
-![Bottom 3 Institutions](bottom_3_institutions.jpg)
+![Bottom 3 Institutions](figure_2.png)
 
 ## Usage
 
@@ -49,7 +49,7 @@ pip install pandas matplotlib SQLAlchemy pymysql
 ### 2. Clone the Repository
 
 ```sh
-git clone https://github.com/your-repo-name/Graduation_Rates_Texas.git
+git clone https://github.com/tcareer34/Team-BAS/tree/main
 cd Graduation_Rates_Texas
 ```
 
@@ -79,7 +79,4 @@ Run the script to process the data and generate visualizations:
 python main.py
 ```
 
-## License
-
-This project is licensed under the **MIT License**.
 
