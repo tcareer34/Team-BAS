@@ -25,7 +25,7 @@ This project:
 
 **Top Public Institutions by Graduation Rate (2020-2022)**
 
-[![Figure 1](figure_1.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.jpg)
+[![Top Public Institution](figure_1.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.jpg)
 
 
 **Bottom 3 Public Institutions by Graduation Rate (2020-2022)**
@@ -34,7 +34,7 @@ This project:
 
 **All Public Institutions by Graduation Rate (2020-2022)**
 
-[![figure #3.jpg](figure%20%233.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure%20%233.jpg)
+[![average graduation rate](figure%20%233.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure%20%233.jpg)
 
 ## Usage
 
