@@ -44,7 +44,7 @@ for i, (institution, grad_rate) in enumerate(zip(top_institutions['Institution']
     plt.bar(institution, grad_rate, color=colors[i], edgecolor='black', width=bar_width)
     plt.text(institution, grad_rate, str(round(grad_rate, 2)), ha='center', va='bottom', fontweight='bold')  # Add text to the top of the bar
 
-plt.title('Institution with Highest Graduation Rates (2020-2022)', fontweight='bold')
+plt.title('Institution with 4 Years Highest Graduation Rates (2020-2022)', fontweight='bold')
 plt.xlabel('Public Institution In Texas', fontweight='bold')
 plt.ylabel('Graduation Rate (%)', fontweight='bold')
 
