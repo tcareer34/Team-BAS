@@ -25,20 +25,23 @@ engine = create_engine(connection_string)
 df = pd.read_csv('graduation_rates_at_public_universities_2020-2022.csv')
 
 # Table name
-table_name = 'public_institutions_graduation_rate'  # Replace with your actual table name
+table_name = 'public_institutions_graduation_rate'
 df.to_sql(table_name, engine, if_exists='replace', index=False)
 
 # Query from the table in the database
 query = f"SELECT * FROM {table_name} ORDER BY GradRate4yr DESC"  # Pulling data from the table
 db_sorted = pd.read_sql(query, engine)
 
-# Sort out top institutions with the highest graduation rates
+# Sort out top institution with the highest graduation rates
 top_institutions = db_sorted.nlargest(3, 'GradRate4yr')  #  highest institutions by row from the db
 num_institutions = len(top_institutions)
 colors = cm.rainbow(np.linspace(0, 1, num_institutions))  # Color mapping
 
 # Plotting figure and adding a counter i and using zip for the two-column tuple
 plt.figure(figsize=(7, 7))
+
+# Plot the bar chart
+bar_colors = ['red', 'purple', 'green']
 bar_width = 0.25
 for i, (institution, grad_rate) in enumerate(zip(top_institutions['Institution'], top_institutions['GradRate4yr'])):
     plt.bar(institution, grad_rate, color=colors[i], edgecolor='black', width=bar_width)
