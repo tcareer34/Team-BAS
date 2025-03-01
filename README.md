@@ -54,8 +54,12 @@ pip install pandas matplotlib SQLAlchemy pymysql
 ### 2. Clone the Repository
 
 ```sh
-git clone https://github.com/tcareer34/Team-BAS/tree/main
-cd Graduation_Rates_Texas
+git clone https://github.com/tcareer34/Team-BAS
+ Navigate to the cloned directory:
+
+sh
+cd Team-BAS
+Explore the dataset and analysis in the data and files, respectively.
 ```
 
 ### 3. Create a Local Database
