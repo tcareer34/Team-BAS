@@ -32,7 +32,7 @@ This project:
 
 ![Bottom 3 Institutions](figure_2.jpg)
 
-![figure #3.jpg](figure%20%233.jpg)
+[![figure #3.jpg](figure%20%233.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure%20%233.jpg)
 
 ## Usage
 
