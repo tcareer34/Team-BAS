@@ -33,7 +33,7 @@ query = f"SELECT * FROM {table_name} ORDER BY GradRate4yr DESC"  # Pulling data 
 db_sorted = pd.read_sql(query, engine)
 
 # Sort out top institution with the highest graduation rates
-top_institutions = db_sorted.nlargest(3, 'GradRate4yr')  #  highest institutions by row from the db
+top_institutions = db_sorted.nlargest(3, 'GradRate4yr')  #  Highest institutions by row from the dbh
 num_institutions = len(top_institutions)
 colors = cm.rainbow(np.linspace(0, 1, num_institutions))  # Color mapping
 
@@ -41,10 +41,10 @@ colors = cm.rainbow(np.linspace(0, 1, num_institutions))  # Color mapping
 plt.figure(figsize=(7, 7))
 
 # Plot the bar chart
-bar_colors = ['red', 'purple', 'green']
+bar_colors = ['red','purple','green']
 bar_width = 0.25
 for i, (institution, grad_rate) in enumerate(zip(top_institutions['Institution'], top_institutions['GradRate4yr'])):
-    plt.bar(institution, grad_rate, color=colors[i], edgecolor='black', width=bar_width)
+    plt.bar(institution, grad_rate, color=bar_colors[i], edgecolor='black', width=bar_width)
     plt.text(institution, grad_rate, str(round(grad_rate, 2)), ha='center', va='bottom', fontweight='bold')  # Add text to the top of the bar
 
 plt.title('Institution with the Highest 4-Year Graduation Rate (2020-2022)', fontweight='bold')
