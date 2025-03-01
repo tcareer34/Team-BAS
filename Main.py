@@ -98,7 +98,7 @@ plt.figure(figsize=(12, 6))
 all_institutions_bar_colors = np.random.rand(len(all_institution), 3)
 plt.bar(all_institution, all_institution_grad_rate, color=all_institutions_bar_colors, edgecolor='black')
 plt.axhline(avg_grad_rate, color='blue', linestyle='--', linewidth=2)
-plt.text(40, avg_grad_rate, f'Average Rate: {avg_grad_rate:.2f}', color='blue', fontsize=10, fontweight='bold')
+plt.text(44, avg_grad_rate, f'Average Rate: {avg_grad_rate:.2f}', color='blue', fontsize=10, fontweight='bold')
 
 # Adding title and label
 plt.title('All Public Institutions Graduation Rate (2020-2022)', fontweight='bold')
