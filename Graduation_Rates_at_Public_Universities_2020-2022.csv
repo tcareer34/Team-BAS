@@ -1,0 +1,112 @@
+ReportYear,FiceCode,Institution,CohortYear4yr,CohortCount4yr,GradRate4yr,CohortYear5yr,CohortCount5yr,GradRate5yr,CohortYear6yr,CohortCount6yr,GradRate6yr
+2020,003541,Angelo State University,2016,1452,0.3,2015,1336,0.5,2014,1285,0.5
+2020,003581,Lamar University,2016,1457,0.2,2015,1505,0.4,2014,1411,0.4
+2020,003592,Midwestern State University,2016,728,0.3,2015,818,0.5,2014,834,0.5
+2020,003630,Prairie View A&M University,2016,1834,0.2,2015,1614,0.4,2014,1602,0.4
+2020,003606,Sam Houston State University,2016,2667,0.4,2015,2514,0.6,2014,2449,0.6
+2020,003624,Stephen F. Austin State University,2016,2328,0.4,2015,2243,0.6,2014,2164,0.6
+2020,003625,Sul Ross State University,2016,349,0.2,2015,313,0.3,2014,328,0.4
+2020,003631,Tarleton State University,2016,2043,0.3,2015,1831,0.5,2014,2013,0.6
+2020,009651,Texas A&M International University,2016,1096,0.3,2015,963,0.5,2014,970,0.6
+2020,003632,Texas A&M University,2016,8513,0.6,2015,8493,0.9,2014,8989,0.9
+2020,010298,Texas A&M University at Galveston,2016,439,0.5,2015,535,0.7,2014,499,0.7
+2020,003565,Texas A&M University-Commerce,2016,1011,0.3,2015,1006,0.5,2014,991,0.5
+2020,011161,Texas A&M University-Corpus Christi,2016,2384,0.3,2015,2231,0.4,2014,2511,0.5
+2020,003639,Texas A&M University-Kingsville,2016,1200,0.3,2015,1263,0.4,2014,1088,0.5
+2020,042485,Texas A&M University-San Antonio,2016,482,0.2,2015,,,2014,,
+2020,029269,Texas A&M University-Texarkana,2016,202,0.2,2015,135,0.3,2014,165,0.4
+2020,003642,Texas Southern University,2016,1246,0.1,2015,1417,0.2,2014,1446,0.2
+2020,003615,Texas State University,2016,5573,0.4,2015,5536,0.6,2014,5234,0.6
+2020,003644,Texas Tech University,2016,4687,0.5,2015,5084,0.7,2014,5518,0.8
+2020,003646,Texas Woman's University,2016,1292,0.3,2015,1163,0.5,2014,1152,0.6
+2020,003656,The University of Texas at Arlington,2016,2898,0.4,2015,2712,0.6,2014,2684,0.6
+2020,003658,The University of Texas at Austin,2016,8566,0.7,2015,7562,0.9,2014,7031,0.9
+2020,030646,The University of Texas at Brownsville,2016,,,2015,,,2014,833,0.5
+2020,009741,The University of Texas at Dallas,2016,3137,0.5,2015,2656,0.7,2014,2480,0.8
+2020,003661,The University of Texas at El Paso,2016,3004,0.2,2015,2950,0.4,2014,2908,0.5
+2020,010115,The University of Texas at San Antonio,2016,4306,0.4,2015,4898,0.6,2014,4948,0.6
+2020,011163,The University of Texas at Tyler,2016,815,0.4,2015,767,0.5,2014,678,0.6
+2020,103599,The University of Texas-Pan American,2016,,,2015,,,2014,3155,0.5
+2020,009930,The University of Texas-Permian Basin,2016,452,0.3,2015,478,0.5,2014,410,0.5
+2020,003599,The University of Texas-Rio Grande Valley,2016,3616,0.3,2015,3774,0.4,2014,,
+2020,003652,University of Houston,2016,4263,0.4,2015,4010,0.6,2014,3909,0.7
+2020,011711,University of Houston-Clear Lake,2016,227,0.3,2015,228,0.6,2014,202,0.6
+2020,012826,University of Houston-Downtown,2016,829,0.2,2015,790,0.3,2014,914,0.4
+2020,013231,University of Houston-Victoria,2016,313,0.1,2015,285,0.3,2014,333,0.3
+2020,003594,University of North Texas,2016,4454,0.4,2015,4326,0.6,2014,4085,0.6
+2020,042421,University of North Texas at Dallas,2016,257,0.3,2015,215,0.4,2014,115,0.5
+2020,003665,West Texas A&M University,2016,1304,0.3,2015,1382,0.5,2014,1323,0.5
+2021,003541,Angelo State University,2017,1368,0.3,2016,1452,0.4,2015,1336,0.5
+2021,003581,Lamar University,2017,1447,0.2,2016,1457,0.3,2015,1505,0.4
+2021,003592,Midwestern State University,2017,814,0.3,2016,728,0.4,2015,818,0.5
+2021,003630,Prairie View A&M University,2017,2047,0.2,2016,1834,0.4,2015,1614,0.5
+2021,003606,Sam Houston State University,2017,2780,0.4,2016,2667,0.6,2015,2514,0.6
+2021,003624,Stephen F. Austin State University,2017,2317,0.4,2016,2328,0.6,2015,2243,0.6
+2021,003625,Sul Ross State University,2017,328,0.2,2016,349,0.3,2015,313,0.4
+2021,003631,Tarleton State University,2017,1743,0.4,2016,2043,0.5,2015,1831,0.6
+2021,009651,Texas A&M International University,2017,1194,0.3,2016,1096,0.5,2015,963,0.6
+2021,003632,Texas A&M University,2017,9670,0.6,2016,8513,0.8,2015,8493,0.9
+2021,010298,Texas A&M University at Galveston,2017,427,0.5,2016,439,0.7,2015,535,0.8
+2021,003565,Texas A&M University-Commerce,2017,860,0.3,2016,1011,0.5,2015,1006,0.5
+2021,011161,Texas A&M University-Corpus Christi,2017,2227,0.3,2016,2384,0.4,2015,2231,0.5
+2021,003639,Texas A&M University-Kingsville,2017,1078,0.3,2016,1200,0.5,2015,1263,0.5
+2021,042485,Texas A&M University-San Antonio,2017,545,0.1,2016,482,0.3,2015,,
+2021,029269,Texas A&M University-Texarkana,2017,237,0.2,2016,202,0.3,2015,135,0.3
+2021,003642,Texas Southern University,2017,1781,0.1,2016,1246,0.2,2015,1417,0.3
+2021,003615,Texas State University,2017,5732,0.4,2016,5573,0.6,2015,5536,0.7
+2021,003644,Texas Tech University,2017,5789,0.5,2016,4687,0.7,2015,5084,0.7
+2021,003646,Texas Woman's University,2017,1266,0.3,2016,1292,0.5,2015,1163,0.6
+2021,003656,The University of Texas at Arlington,2017,3163,0.4,2016,2898,0.6,2015,2712,0.6
+2021,003658,The University of Texas at Austin,2017,8238,0.7,2016,8566,0.9,2015,7562,0.9
+2021,030646,The University of Texas at Brownsville,2017,,,2016,,,2015,,
+2021,009741,The University of Texas at Dallas,2017,3085,0.6,2016,3137,0.7,2015,2656,0.8
+2021,003661,The University of Texas at El Paso,2017,3084,0.2,2016,3004,0.4,2015,2950,0.5
+2021,010115,The University of Texas at San Antonio,2017,4946,0.4,2016,4306,0.6,2015,4898,0.7
+2021,011163,The University of Texas at Tyler,2017,649,0.5,2016,815,0.6,2015,767,0.6
+2021,103599,The University of Texas-Pan American,2017,,,2016,,,2015,,
+2021,009930,The University of Texas-Permian Basin,2017,432,0.3,2016,452,0.4,2015,478,0.5
+2021,003599,The University of Texas-Rio Grande Valley,2017,4197,0.3,2016,3616,0.5,2015,3774,0.5
+2021,003652,University of Houston,2017,4746,0.5,2016,4263,0.6,2015,4010,0.7
+2021,011711,University of Houston-Clear Lake,2017,234,0.3,2016,227,0.6,2015,228,0.7
+2021,012826,University of Houston-Downtown,2017,856,0.2,2016,829,0.3,2015,790,0.4
+2021,013231,University of Houston-Victoria,2017,289,0.1,2016,313,0.3,2015,285,0.4
+2021,003594,University of North Texas,2017,4581,0.4,2016,4454,0.6,2015,4326,0.6
+2021,042421,University of North Texas at Dallas,2017,290,0.3,2016,257,0.4,2015,215,0.5
+2021,003665,West Texas A&M University,2017,1229,0.3,2016,1304,0.5,2015,1382,0.5
+2022,003541,Angelo State University,2018,1363,0.3,2017,1368,0.4,2016,1452,0.5
+2022,003581,Lamar University,2018,1431,0.2,2017,1447,0.3,2016,1457,0.4
+2022,003592,Midwestern State University,2018,866,0.3,2017,814,0.4,2016,728,0.5
+2022,003630,Prairie View A&M University,2018,2176,0.2,2017,2047,0.4,2016,1834,0.5
+2022,003606,Sam Houston State University,2018,2827,0.4,2017,2780,0.6,2016,2667,0.6
+2022,003624,Stephen F. Austin State University,2018,2175,0.4,2017,2317,0.6,2016,2328,0.6
+2022,003625,Sul Ross State University,2018,344,0.3,2017,328,0.3,2016,349,0.3
+2022,003631,Tarleton State University,2018,2046,0.4,2017,1743,0.6,2016,2043,0.6
+2022,009651,Texas A&M International University,2018,1319,0.3,2017,1194,0.5,2016,1096,0.6
+2022,003632,Texas A&M University,2018,9682,0.6,2017,9670,0.8,2016,8513,0.9
+2022,010298,Texas A&M University at Galveston,2018,359,0.5,2017,427,0.7,2016,439,0.8
+2022,003565,Texas A&M University-Commerce,2018,876,0.3,2017,860,0.5,2016,1011,0.5
+2022,011161,Texas A&M University-Corpus Christi,2018,1917,0.3,2017,2227,0.4,2016,2384,0.5
+2022,003639,Texas A&M University-Kingsville,2018,1213,0.3,2017,1078,0.5,2016,1200,0.5
+2022,042485,Texas A&M University-San Antonio,2018,516,0.2,2017,545,0.3,2016,482,0.4
+2022,029269,Texas A&M University-Texarkana,2018,231,0.2,2017,237,0.4,2016,202,0.3
+2022,003642,Texas Southern University,2018,1530,0.1,2017,1781,0.2,2016,1246,0.3
+2022,003615,Texas State University,2018,5966,0.4,2017,5732,0.6,2016,5573,0.7
+2022,003644,Texas Tech University,2018,6083,0.5,2017,5789,0.7,2016,4687,0.7
+2022,003646,Texas Woman's University,2018,1226,0.3,2017,1266,0.5,2016,1292,0.5
+2022,003656,The University of Texas at Arlington,2018,3395,0.4,2017,3163,0.6,2016,2898,0.7
+2022,003658,The University of Texas at Austin,2018,8816,0.7,2017,8238,0.9,2016,8566,0.9
+2022,030646,The University of Texas at Brownsville,2018,,,2017,,,2016,,
+2022,009741,The University of Texas at Dallas,2018,3751,0.6,2017,3085,0.7,2016,3137,0.7
+2022,003661,The University of Texas at El Paso,2018,2896,0.2,2017,3084,0.4,2016,3004,0.5
+2022,010115,The University of Texas at San Antonio,2018,4864,0.4,2017,4946,0.6,2016,4306,0.7
+2022,011163,The University of Texas at Tyler,2018,824,0.5,2017,649,0.6,2016,815,0.6
+2022,103599,The University of Texas-Pan American,2018,,,2017,,,2016,,
+2022,009930,The University of Texas-Permian Basin,2018,371,0.3,2017,432,0.4,2016,452,0.5
+2022,003599,The University of Texas-Rio Grande Valley,2018,4234,0.3,2017,4197,0.5,2016,3616,0.6
+2022,003652,University of Houston,2018,4919,0.4,2017,4746,0.6,2016,4263,0.7
+2022,011711,University of Houston-Clear Lake,2018,246,0.4,2017,234,0.5,2016,227,0.7
+2022,012826,University of Houston-Downtown,2018,973,0.2,2017,856,0.3,2016,829,0.4
+2022,013231,University of Houston-Victoria,2018,307,0.2,2017,289,0.2,2016,313,0.3
+2022,003594,University of North Texas,2018,4511,0.5,2017,4581,0.6,2016,4454,0.6
+2022,042421,University of North Texas at Dallas,2018,353,0.3,2017,290,0.4,2016,257,0.5
+2022,003665,West Texas A&M University,2018,1170,0.3,2017,1229,0.5,2016,1304,0.5
