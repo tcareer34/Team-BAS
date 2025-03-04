@@ -24,17 +24,17 @@ This project:
 ### Example Visualizations
 
 **Top Public Institutions by Graduation Rate (2020-2022)**
-![figure 1.jpg](figure 1.jpg)
+
 [![Top Public Institution](figure_1.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.jpg)
 
 
 **Bottom 3 Public Institutions by Graduation Rate (2020-2022)**
-![figure 2.jpg](figure 2.jpg)
+
 [![Bottom 3 Institutions](figure_2.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_2.jpg)
 
 
 **All Public Institutions by Graduation Rate (2020-2022)**
-![figure #3.jpg](figure%20%233.jpg)
+
 [![Average graduation rate](figure%20%233.jpg)](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure%20%233.jpg)
 
 ## Usage
