@@ -53,7 +53,7 @@ pip install pandas matplotlib SQLAlchemy pymysql
 ### 2. Clone the Repository
 
 ```sh
-git clone https://github.com/tcareer34/Team-BAS
+git clone https://github.com/tcareer34/Team-BAS.git
  Navigate to the cloned directory:
 
 sh
