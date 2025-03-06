@@ -33,7 +33,7 @@ query = f"SELECT * FROM {table_name} ORDER BY GradRate4yr DESC"  # Pulling data 
 db_sorted = pd.read_sql(query, engine)
 
 # Sort out top institution with the highest graduation rates
-top_institutions = db_sorted.nlargest(3, 'GradRate4yr')  #  Highest institutions by row from the database
+top_institutions = db_sorted.nlargest('GradRate4yr')  #  Highest institutions by row from the database
 num_institutions = len(top_institutions)
 colors = cm.rainbow(np.linspace(0, 1, num_institutions))  # Color mapping
 
