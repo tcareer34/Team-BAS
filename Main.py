@@ -38,7 +38,7 @@ avg_grad_rate = db_sorted['GradRate4yr'].mean()
 # Function to sort out the 3 institutions with the highest graduation rates
 def top_three_public_institutions(table, engine):
     df = pd.read_sql_table(table, con=engine)
-    highest_grad_rate_data = df.sort_values(by='GradRate4yr', ascending=False).head(3)[['Institution', 'GradRate4yr']]
+    highest_grad_rate_data = df.sort_values(by='GradRate4yr', ascending=True).head(3)[['Institution', 'GradRate4yr']]
     institutions = highest_grad_rate_data['Institution'].tolist()
     grad_rates = highest_grad_rate_data['GradRate4yr'].tolist()
     return institutions, grad_rates
