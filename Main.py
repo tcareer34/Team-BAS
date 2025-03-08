@@ -35,6 +35,7 @@ db_sorted = pd.read_sql(query, engine)
 # Calculate average graduation rate
 avg_grad_rate = db_sorted['GradRate4yr'].mean()
 
+
 # Function to sort out the 3 institutions with the highest graduation rates
 def top_three_public_institutions(table, engine):
     df = pd.read_sql_table(table, con=engine)
@@ -76,69 +77,62 @@ all_institution, all_institution_grad_rate = sort_all_institutions(table_name, e
 # Plotting
 
 # Plot the bar chart for the institution with the highest 4-year graduation rate
-plt.figure(figsize=(7, 7))
-plt.bar(top_inst, top_inst_grad_rate, width=0.25, color='blue', edgecolor='black')
-plt.text(top_inst, top_inst_grad_rate, f'{top_inst_grad_rate:.2f}', ha='center', va='bottom', fontweight='bold')
+plt.figure(figsize=(10, 7))
+plt.bar(top_inst, top_inst_grad_rate, width=0.35, color='blue', edgecolor='black')
+plt.text(top_inst, top_inst_grad_rate, f'{top_inst_grad_rate:.2f}', ha='center', va='bottom', fontsize=12, fontweight='bold')
 
-plt.title('Institution with the Highest 4-Year Graduation Rate (2020-2022)', fontweight='bold')
-plt.xlabel('Public Institution in Texas', fontweight='bold')
-plt.ylabel('Graduation Rate (%)', fontweight='bold')
-plt.xticks(rotation=45)
+plt.title('Institution with the Highest 4-Year Graduation Rate (2020-2022)', fontsize=16, fontweight='bold')
+plt.xlabel('Public Institution in Texas', fontsize=14, fontweight='bold')
+plt.ylabel('Graduation Rate (%)', fontsize=14, fontweight='bold')
+plt.xticks(rotation=0, fontsize=12)
+plt.yticks(fontsize=12)
 plt.tight_layout()
 
-
 # Plot the bar chart for top 3 institutions with the highest graduation rates
-plt.figure(figsize=(7, 7))
+plt.figure(figsize=(10, 7))
 bar_colors = ['red', 'purple', 'green']
-bar_width = 0.25
-
-# Verify the data being plotted
-print(high_3_institutions)
-print(high_3_grad_rates)
+bar_width = 0.35
 
 # Plot each bar separately to ensure distinct colors
 for i, (institution, grad_rate) in enumerate(zip(high_3_institutions, high_3_grad_rates)):
     plt.bar(institution, grad_rate, width=bar_width, color=bar_colors[i], edgecolor='black')
-    plt.text(institution, grad_rate, f'{grad_rate:.2f}', ha='center', va='bottom', fontweight='bold')
+    plt.text(institution, grad_rate, f'{grad_rate:.2f}', ha='center', va='bottom', fontsize=12, fontweight='bold')
 
-plt.title('Top 3 Public Institutions by Graduation Rates (2020-2022)', fontweight='bold')
-plt.xlabel('Institution', fontweight='bold')
-plt.ylabel('Graduation Rate (%)', fontweight='bold')
-plt.xticks(rotation=45)
+plt.title('Top 3 Public Institutions by Graduation Rates (2020-2022)', fontsize=16, fontweight='bold')
+plt.xlabel('Institution', fontsize=14, fontweight='bold')
+plt.ylabel('Graduation Rate (%)', fontsize=14, fontweight='bold')
+plt.xticks(rotation=0, fontsize=12)
+plt.yticks(fontsize=12)
 plt.tight_layout()
 
-
 # Plot the bar chart for lowest 3 institutions with the lowest graduation rates
-plt.figure(figsize=(7, 7))
+plt.figure(figsize=(10, 7))
 bar_colors = ['cyan', 'magenta', 'yellow']
-bar_width = 0.25
+bar_width = 0.35
 
 plt.bar(low_3_institutions, low_3_grad_rates, width=bar_width, color=bar_colors, edgecolor='black')
 
 for i in range(len(low_3_institutions)):
-    plt.text(low_3_institutions[i], low_3_grad_rates[i], str(low_3_grad_rates[i]), ha='center', va='bottom', fontweight='bold')
+    plt.text(low_3_institutions[i], low_3_grad_rates[i], str(low_3_grad_rates[i]), ha='center', va='bottom', fontsize=12, fontweight='bold')
 
-plt.title('Bottom 3 Public Institutions by Graduation Rate (2020-2022)', fontweight='bold')
-plt.xlabel('Public Institutions in Texas', fontweight='bold')
-plt.ylabel('Graduation Rate (%)', fontweight='bold')
-plt.xticks(rotation=45)
+plt.title('Bottom 3 Public Institutions by Graduation Rate (2020-2022)', fontsize=16, fontweight='bold')
+plt.xlabel('Public Institutions in Texas', fontsize=14, fontweight='bold')
+plt.ylabel('Graduation Rate (%)', fontsize=14, fontweight='bold')
+plt.xticks(rotation=0, fontsize=12)
+plt.yticks(fontsize=12)
 plt.tight_layout()
 
 # Plot chart including all institutions' rates and the average rate
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(14, 8))
 cmap = plt.get_cmap('viridis')
 colors = cmap(np.linspace(0, 1, len(all_institution)))
 plt.bar(all_institution, all_institution_grad_rate, color=colors, edgecolor='black')
 plt.axhline(avg_grad_rate, color='blue', linestyle='--', linewidth=2)
-plt.text(40, avg_grad_rate, f'Average Rate: {avg_grad_rate:.2f}', color='blue', fontsize=10, fontweight='bold')
+plt.text(40, avg_grad_rate, f'Average Rate: {avg_grad_rate:.2f}', color='blue', fontsize=12, fontweight='bold')
 
-plt.title('Graduation Rates of All Public Institutions (2020-2022)', fontweight='bold')
-plt.xlabel('All Public Institutions in Texas', fontweight='bold')
-plt.ylabel('Graduation Rate (%)', fontweight='bold')
-plt.xticks(rotation=90)
-plt.tight_layout()
-
-
+plt.title('Graduation Rates of All Public Institutions (2020-2022)', fontsize=12, fontweight='bold')
+plt.xlabel('All Public Institutions in Texas', fontsize=12, fontweight='bold')
+plt.ylabel('Graduation Rate (%)', fontsize=12, fontweight='bold')
 
 
 
