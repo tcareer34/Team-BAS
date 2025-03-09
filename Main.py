@@ -33,7 +33,7 @@ query = f"SELECT * FROM {table_name} ORDER BY GradRate4yr DESC"  # Pulling data 
 db_sorted = pd.read_sql(query, engine)
 
 # Sort out top institution with the highest graduation rates
-top_institutions = db_sorted.nlargest('GradRate4yr')  #  Highest institutions by row from the database
+top_institutions = db_sorted.nlargest(3, 'GradRate4yr')  #  Highest institutions by row from the database
 num_institutions = len(top_institutions)
 colors = cm.rainbow(np.linspace(0, 1, num_institutions))  # Color mapping
 
@@ -94,24 +94,14 @@ plt.xlabel('Public Institutions in Texas', fontweight='bold')
 plt.ylabel('Graduation Rate (%)', fontweight='bold')
 plt.tight_layout()
 
-# Plot chart including all institutions' rates and the average rate
-plt.figure(figsize=(14, 8))
-cmap = plt.get_cmap('viridis')
-colors = cmap(np.linspace(0, 1, len(all_institution)))
-plt.bar(all_institution, all_institution_grad_rate, color=colors, edgecolor='black')
-plt.axhline(avg_grad_rate, color='blue', linestyle='--', linewidth=2)
-plt.text(40, avg_grad_rate, f'Average Rate: {avg_grad_rate:.2f}', color='blue', fontsize=12, fontweight='bold')
-
-plt.title('Graduation Rates of All Public Institutions (2020-2022)', fontsize=12, fontweight='bold')
-plt.xlabel('All Public Institutions in Texas', fontsize=12, fontweight='bold')
-plt.ylabel('Graduation Rate (%)', fontsize=12, fontweight='bold')
 
 # Plot chart including all institutions' rates and the average rate
 all_institution, all_institution_grad_rate = sort_all_institutions(table_name, engine)
 
 plt.figure(figsize=(12, 6))
-all_institutions_bar_colors = np.random.rand(len(all_institution), 3)
-plt.bar(all_institution, all_institution_grad_rate, color=all_institutions_bar_colors, edgecolor='black')
+cmap = plt.get_cmap('viridis')
+colors = cmap(np.linspace(0, 1, len(all_institution)))
+plt.bar(all_institution, all_institution_grad_rate, color=colors, edgecolor='black')
 plt.axhline(avg_grad_rate, color='blue', linestyle='--', linewidth=2)
 plt.text(40, avg_grad_rate, f'Average Rate: {avg_grad_rate:.2f}', color='blue', fontsize=10, fontweight='bold')
 
