@@ -18,8 +18,13 @@ password = ''
 dbname = ('bas final')
 
 # Connect to MySQL on W/LAMP Server
-connection_string = f"mysql+pymysql://{username}:{password}@{hostname}/{dbname}"
-engine = create_engine(connection_string)
+try:
+    connection_string = f"mysql+pymysql://{username}:{password}@{hostname}/{dbname}"
+    engine = create_engine(connection_string)
+    print("Database connection successful")
+except Exception as e:
+    print(f"Error connecting to database: {e}")
+    exit()
 
 # Open CSV file from the project folder (use your actual file path)
 df = pd.read_csv('graduation_rates_at_public_universities_2020-2022.csv')
