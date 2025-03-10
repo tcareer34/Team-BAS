@@ -13,12 +13,12 @@ import matplotlib.cm as cm
 # Install cryptography
 # SQL connection and Database
 hostname = 'localhost'
-uname = 'root'
-pwd = ''
+username = 'root'
+password = ''
 dbname = ('bas final')
 
 # Connect to MySQL on W/LAMP Server
-connection_string = f"mysql+pymysql://{uname}:{pwd}@{hostname}/{dbname}"
+connection_string = f"mysql+pymysql://{username}:{password}@{hostname}/{dbname}"
 engine = create_engine(connection_string)
 
 # Open CSV file from the project folder (use your actual file path)
