@@ -130,3 +130,4 @@ plt.show()
 
 # Close connection made by engine
 engine.dispose()
+print("Database connection closed.")
