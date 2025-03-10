@@ -26,8 +26,16 @@ except Exception as e:
     print(f"Error connecting to database: {e}")
     exit()
 
-# Open CSV file from the project folder (use your actual file path)
-df = pd.read_csv('graduation_rates_at_public_universities_2020-2022.csv')
+# Open CSV file from the project folder (use your actual file path) with error handling
+try:
+    df = pd.read_csv('graduation_rates_at_public_universities_2020-2022.csv')
+    print("CSV read successful")
+except FileNotFoundError:
+    print("Error: CSV file not found.")
+    exit()
+except Exception as e:
+    print(f"Error reading CSV file: {e}")
+    exit()
 
 # Table name
 table_name = 'public_institutions_graduation_rate'
