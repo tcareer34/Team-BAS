@@ -37,11 +37,11 @@ except Exception as e:
     print(f"Error reading CSV file: {e}")
     exit()
 
-# Table name
+# Load data into SQL database table
 table_name = 'public_institutions_graduation_rate'
 df.to_sql(table_name, engine, if_exists='replace', index=False)
 
-# Query from the table in the database
+# Query sorted data from the table in the database
 query = f"SELECT * FROM {table_name} ORDER BY GradRate4yr DESC"  # Pulling data from the table
 db_sorted = pd.read_sql(query, engine)
 
