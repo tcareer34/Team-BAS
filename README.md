@@ -21,24 +21,32 @@ This project:
 - Highlights **the bottom 3** universities with the lowest graduation rates.
 - Compares **all institutions** against the **average graduation rate**.
 
-### Example Visualizations
+## Example Visualizations
 
-**Top Public Institutions by Graduation Rate (2020-2022)**
+### <u>**Top Public Institutions by Graduation Rate (2020-2022)**</u>
 
-![Top Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.jpg)
-
-**Top 3 Public Institutions by Graduation Rate (2020-2022)**
-
-![Top 3 Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_2.jpg)
-
-**Bottom 3 Public Institutions by Graduation Rate (2020-2022)**
-
-![Bottom 3 Institutions](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_3.jpg)
+![Top 3 Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.png)
 
 
-**All Public Institutions by Graduation Rate (2020-2022)**
 
-![Average graduation rate](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_4.jpg)
+### **Top 3 Public Institutions by Graduation Rate (2020-2022)**
+
+![Top 3 Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_2.png)
+
+
+
+### **Bottom 3 Public Institutions by Graduation Rate (2020-2022)**
+
+![Bottom 3 Institutions](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_3.png)
+
+
+
+### **All Public Institutions by Graduation Rate (2020-2022)**
+
+![Average graduation rate](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_4.png)
+
+
+
 
 ## Usage
 
