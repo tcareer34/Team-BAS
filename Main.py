@@ -1,48 +1,50 @@
 # Team BAS
 # CNE 340 Final Project
-# 4-Year Graduation Rates at Texas Public Universities 2020-2022
+# 4-Year Graduation Rates at Texas Public Universities between 2020-2022
 
 
-# Import section
-import pandas as pd
-import numpy as np
-from matplotlib import pyplot as plt
-from sqlalchemy import create_engine
-import matplotlib.cm as cm
+# Import required libraries
+import pandas as pd # For handling datasets
+import numpy as np  # For numerical operations
+from matplotlib import pyplot as plt  # For data visualization
+from sqlalchemy import create_engine  # For database connection
+import matplotlib.cm as cm  # For colormap in visualization
 
 # Install cryptography
 # SQL connection and Database
-hostname = 'localhost'
-username = 'root'
-password = ''
-dbname = ('bas final')
+# Database credentials and connection details
+hostname = 'localhost'  # Database host
+username = 'root'  # Database username
+password = ''  # Database password (empty in this case)
+dbname = ('bas final')  # Database name
 
 # Connect to MySQL on W/LAMP Server
 try:
     connection_string = f"mysql+pymysql://{username}:{password}@{hostname}/{dbname}"
-    engine = create_engine(connection_string)
+    engine = create_engine(connection_string)  # Create database engine
     print("Database connection successful")
 except Exception as e:
-    print(f"Error connecting to database: {e}")
+    print(f"Error connecting to database: {e}")   # Print error if connection fails
     exit()
 
 # Open CSV file from the project folder (use your actual file path) with error handling
+# Read CSV file into a DataFrame
 try:
-    df = pd.read_csv('graduation_rates_at_public_universities_2020-2022.csv')
+    df = pd.read_csv('graduation_rates_at_public_universities_2020-2022.csv')  # Load dataset
     print("CSV read successful")
 except FileNotFoundError:
-    print("Error: CSV file not found.")
+    print("Error: CSV file not found.")  # Handle file not found error
     exit()
 except Exception as e:
-    print(f"Error reading CSV file: {e}")
+    print(f"Error reading CSV file: {e}")  # Handle other CSV errors
     exit()
 
 # Load data into SQL database table
 table_name = 'public_institutions_graduation_rate'
-df.to_sql(table_name, engine, if_exists='replace', index=False)
+df.to_sql(table_name, engine, if_exists='replace', index=False)  # Store DataFrame into SQL table
 
 
-# Query sorted data from the table in the database
+# Query data sorted by highest 4-year graduation rate
 query = f"SELECT * FROM {table_name} ORDER BY GradRate4yr DESC"  # Pulling data from the table
 db_sorted = pd.read_sql(query, engine)
 
@@ -60,7 +62,7 @@ avg_grad_rate = db_sorted['GradRate4yr'].mean()
 
 # Function to sort out the 3 institutions with the highest graduation rates
 def top_three_public_institutions(table, engine):
-    df = pd.read_sql_table(table, con=engine)
+    df = pd.read_sql_table(table, con=engine) # Read table into DataFrame
 
     # Handle missing values, convert types, and remove duplicates
     df = df.dropna(subset=['GradRate4yr'])  # Remove rows where GradRate4yr is NaN
@@ -99,6 +101,7 @@ def sort_all_institutions(table, engine):
     return all_institutions_institution, grad_rate
 
 # Call the functions to get the top institution, top 3 and lowest 3 public institutions
+# Retrieve required data
 top_inst, top_inst_grad_rate = top_institution(table_name, engine)
 high_3_institutions, high_3_grad_rates = top_three_public_institutions(table_name, engine)
 low_3_institutions, low_3_grad_rates = three_lowest_institutions(table_name, engine)
@@ -106,7 +109,7 @@ all_institution, all_institution_grad_rate = sort_all_institutions(table_name, e
 
 # Plotting
 
-# Plot the bar chart for the institution with the highest 4-year graduation rate
+# Plot highest graduation rate institution
 plt.figure(figsize=(10, 7))
 plt.bar(top_inst, top_inst_grad_rate, width=0.35, color='blue', edgecolor='black')
 plt.text(top_inst, top_inst_grad_rate, f'{top_inst_grad_rate:.2f}', ha='center', va='bottom', fontsize=12, fontweight='bold')
@@ -118,7 +121,7 @@ plt.xticks(rotation=0, fontsize=12)
 plt.yticks(fontsize=12)
 plt.tight_layout()
 
-# Plot the bar chart for top 3 institutions with the highest graduation rates
+# Plot top 3 institutions
 plt.figure(figsize=(10, 7))
 bar_colors = ['red', 'purple', 'green']
 bar_width = 0.35
@@ -129,13 +132,13 @@ for i, (institution, grad_rate) in enumerate(zip(high_3_institutions, high_3_gra
     plt.text(institution, grad_rate, f'{grad_rate:.2f}', ha='center', va='bottom', fontsize=12, fontweight='bold')
 
 plt.title('Top 3 Public Institutions by Graduation Rates (2020-2022)', fontsize=16, fontweight='bold')
-plt.xlabel('Institution', fontsize=14, fontweight='bold')
+plt.xlabel('Public Institutions in Texas', fontsize=14, fontweight='bold')
 plt.ylabel('4 Year Graduation Rate (%)', fontsize=14, fontweight='bold')
 plt.xticks(rotation=0, fontsize=12)
 plt.yticks(fontsize=12)
 plt.tight_layout()
 
-# Plot the bar chart for lowest 3 institutions with the lowest graduation rates
+# Plot bottom 3 institutions
 plt.figure(figsize=(10, 7))
 bar_colors = ['cyan', 'magenta', 'yellow']
 bar_width = 0.35
@@ -152,7 +155,7 @@ plt.xticks(rotation=0, fontsize=12)
 plt.yticks(fontsize=12)
 plt.tight_layout()
 
-# Plot chart including all institutions' rates and the average rate
+# Plot all institutions and average graduation rate
 plt.figure(figsize=(14, 8))
 cmap = plt.get_cmap('viridis')
 colors = cmap(np.linspace(0, 1, len(all_institution)))
@@ -174,6 +177,7 @@ plt.tight_layout()
 
 # Show all plots at the same time
 plt.show()
-# Close connection made by engine
+
+# Close database connection made by engine
 engine.dispose()
 print("Database connection closed.")
