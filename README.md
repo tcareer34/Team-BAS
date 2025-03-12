@@ -21,9 +21,9 @@ This project:
 - Highlights **the bottom 3** universities with the lowest graduation rates.
 - Compares **all institutions** against the **average graduation rate**.
 
-### Example Visualizations
+## Example Visualizations
 
-**Top Public Institutions by Graduation Rate (2020-2022)**
+## **Top Public Institutions by Graduation Rate (2020-2022)**
 
 ![Top 3 Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.png)
 
