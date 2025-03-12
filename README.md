@@ -17,13 +17,14 @@ The dataset used in this analysis is located in the project folder and includes:
 This project:
 - Reads the dataset and transfers it to a **local phpMyAdmin MySQL database**.
 - Performs data analysis and visualization using **Python, Pandas, and Matplotlib**.
-- Identifies **the top** universities with the highest graduation rates.
+- Identifies **the top** university that has the highest graduation rates.
+- Identifies **the top 3** universities with the highest graduation rates.
 - Highlights **the bottom 3** universities with the lowest graduation rates.
 - Compares **all institutions** against the **average graduation rate**.
 
 ## Example Visualizations
 
-### <u>**Top Public Institutions by Graduation Rate (2020-2022)**</u>
+### **Top Public Institutions by Graduation Rate (2020-2022)**
 
 ![Top 3 Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.png)
 
