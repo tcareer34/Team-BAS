@@ -33,9 +33,9 @@ query = f"SELECT * FROM {table_name} ORDER BY GradRate4yr DESC"  # Pulling data 
 db_sorted = pd.read_sql(query, engine)
 
 # Sort out top institution with the highest graduation rates
-top_institutions = db_sorted.nlargest(3, 'GradRate4yr')  #  Highest institutions by row from the database
+top_institutions = db_sorted.nlargest(3, 'GradRate4yr')  #  Highest institution by row GradRate4r from the database
 num_institutions = len(top_institutions)
-colors = cm.rainbow(np.linspace(0, 1, num_institutions))  # Color mapping
+colors = cm.rainbow(np.linspace(0, 3, num_institutions))  # Color mapping
 
 # Plotting figure and adding a counter i and using zip for the two-column tuple
 plt.figure(figsize=(7, 7))
@@ -52,6 +52,28 @@ plt.title('Institution with the Highest 4-Year Graduation Rate (2020-2022)', fon
 plt.xlabel('Public Institution In Texas', fontweight='bold')
 plt.ylabel('Graduation Rate (%)', fontweight='bold')
 
+# Function to sort out the 3 institutions with the highest graduation rates
+def top_three_public_institutions(table, engine):
+    df = pd.read_sql_table(table, con=engine)
+
+    # Handle missing values, convert types, and remove duplicates
+    df = df.dropna(subset=['GradRate4yr'])  # Remove rows where GradRate4yr is NaN
+    df['GradRate4yr'] = pd.to_numeric(df['GradRate4yr'], errors='coerce')  # Ensure numeric sorting
+    df = df.drop_duplicates(subset=['Institution'])  # Ensure unique institutions
+
+    # Sort and select top 3 institutions
+    highest_grad_rate_data = df.sort_values(by='GradRate4yr', ascending=False).head(3)[['Institution', 'GradRate4yr']]
+    institutions = highest_grad_rate_data['Institution'].tolist()
+    grad_rates = highest_grad_rate_data['GradRate4yr'].tolist()
+
+    return institutions, grad_rates
+
+high_3_institutions, high_3_grad_rates = top_three_public_institutions(table_name, engine)
+
+# Plot the bar chart for top 3 institutions with the highest graduation rates
+plt.figure(figsize=(10, 7))
+bar_colors = ['red', 'purple', 'green']
+bar_width = 0.35
 
 # Calculate average graduation rate
 avg_grad_rate = db_sorted['GradRate4yr'].mean()
