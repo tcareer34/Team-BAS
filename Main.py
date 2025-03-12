@@ -129,7 +129,7 @@ for i, (institution, grad_rate) in enumerate(zip(high_3_institutions, high_3_gra
     plt.text(institution, grad_rate, f'{grad_rate:.2f}', ha='center', va='bottom', fontsize=12, fontweight='bold')
 
 plt.title('Top 3 Public Institutions by Graduation Rates (2020-2022)', fontsize=16, fontweight='bold')
-plt.xlabel('Institution', fontsize=14, fontweight='bold')
+plt.xlabel('Public Institutions in Texas', fontsize=14, fontweight='bold')
 plt.ylabel('4 Year Graduation Rate (%)', fontsize=14, fontweight='bold')
 plt.xticks(rotation=0, fontsize=12)
 plt.yticks(fontsize=12)
