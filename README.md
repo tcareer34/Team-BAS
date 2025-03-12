@@ -39,6 +39,7 @@ This project:
 **All Public Institutions by Graduation Rate (2020-2022)**
 
 ![Average graduation rate](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_4.jpg)
+
 ## Usage
 
 To use this repository:
