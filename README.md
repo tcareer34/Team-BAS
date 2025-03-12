@@ -23,7 +23,7 @@ This project:
 
 ## Example Visualizations
 
-### **Top Public Institutions by Graduation Rate (2020-2022)**
+### **<u>Top Public Institutions by Graduation Rate (2020-2022)</u>**
 
 ![Top 3 Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.png)
 
