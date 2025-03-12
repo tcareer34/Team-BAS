@@ -27,7 +27,7 @@ This project:
 
 ![Top Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_1.jpg)
 
-**Top Public Institutions by Graduation Rate (2020-2022)**
+**Top 3 Public Institutions by Graduation Rate (2020-2022)**
 
 ![Top Public Institution](https://github.com/tcareer34/Team-BAS/blob/Team_Test/Figure_2.jpg)
 
