@@ -15,9 +15,9 @@ The dataset used in this analysis is located in the project folder and includes:
 ## Analysis
 
 This project:
-- Reads the dataset and transfers it to a **local phpMyAdmin MySQL database**.
+- Reads the dataset and transfers it to a **local phpMyAdmin MySQL database called (bas final)**.
 - Performs data analysis and visualization using **Python, Pandas, and Matplotlib**.
-- Identifies **the top** university that has the highest graduation rates.
+- Showcase **the top** university that has the highest graduation rates.
 - Identifies **the top 3** universities with the highest graduation rates.
 - Highlights **the bottom 3** universities with the lowest graduation rates.
 - Compares **all institutions** against the **average graduation rate**.
