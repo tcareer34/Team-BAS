@@ -6,8 +6,9 @@
 # Import required libraries
 import pandas as pd # For handling datasets
 import numpy as np  # For numerical operations
-from matplotlib import pyplot as plt  # For data visualization
 from sqlalchemy import create_engine  # For database connection
+from matplotlib import pyplot as plt  # For data visualization
+  # For database connection
 import matplotlib.cm as cm  # For colormap in visualization
 
 # Install cryptography
